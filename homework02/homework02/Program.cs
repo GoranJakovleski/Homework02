@@ -56,27 +56,27 @@ namespace homework02
             // if its not converted, print in the console that user inserted invalid input
             //: if number / 2 has remainder 0 its even, else its odd
 
-            //Console.WriteLine("Please enter some number");
-            //int converted;
-            //bool isConverted = int.TryParse(Console.ReadLine(), out converted);
+           Console.WriteLine("Please enter some number");
+            int converted;
+            bool isConverted = int.TryParse(Console.ReadLine(), out converted);
 
-            //if (converted % 2 == 0)
-            //{
+            if (isConverted == !true)
+            {
 
-            //    Console.WriteLine("The number is add");
+                Console.WriteLine("You inserted invalid input");
 
-            //}
+            }
 
-            //else if (converted > 0)
-            //{
-            //    Console.WriteLine("The number is even");
+            else if (converted % 2 == 0)
+            {
+                Console.WriteLine("The number is even");
 
-            //}
-            //else
-            //{
+            }
+            else
+            {
 
-            //    Console.WriteLine("You inserted invalid input");
-            //}
+                Console.WriteLine("The number is add");
+            }
 
 
             Console.ReadLine();
